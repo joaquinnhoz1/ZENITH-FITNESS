@@ -1,0 +1,60 @@
+
+.portada {
+  min-height: 60vh;
+  background: url('../assets/img/portada.jpg') center / cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.portada-interior {
+  text-align: center;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.portada-interior h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.portada-interior p {
+  color: #a1a1aa;
+  margin: 8px 0 16px;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rejilla-caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.tarjeta-caracteristica {
+  background: #16161b;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-caracteristica:hover {
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 1024px) {
+  .rejilla-caracteristicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rejilla-caracteristicas {
+    grid-template-columns: 1fr;
+  }
+}

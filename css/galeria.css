@@ -1,0 +1,43 @@
+
+.seccion-galeria {
+  padding: 3rem 0;
+}
+
+.rejilla-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.rejilla-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.rejilla-galeria img:hover {
+  transform: scale(1.02);
+  filter: saturate(1.05);
+}
+
+
+@media (max-width: 1024px) {
+  .rejilla-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rejilla-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .rejilla-galeria {
+    grid-template-columns: 1fr;
+  }
+}

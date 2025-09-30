@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Zenith Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+<header class="encabezado-sitio">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sombra-fina sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fa-solid fa-dumbbell"></i> Zenith Fitness
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link " href="planes.html">Planes</a></li>
+          <li class="nav-item"><a class="nav-link " href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contacto" class="seccion-contacto">
+  <section class="contenedor formulario-contenedor">
+    <h1 class="titulo-seccion">Contacto</h1>
+    <p>Escribinos para coordinar una visita o una clase de prueba.</p>
+    <form class="formulario-contacto" action="#" method="post">
+      <div class="campo-formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="campo-formulario">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+      </div>
+      <div class="campo-formulario">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234 5678">
+      </div>
+      <div class="campo-formulario">
+        <label for="plan">Plan de interés</label>
+        <select id="plan" name="plan">
+          <option value="funcional">Funcional</option>
+          <option value="musculacion">Musculación</option>
+          <option value="hiit">HIIT</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <fieldset class="campo-formulario">
+        <legend>¿Cuándo querés empezar?</legend>
+        <label><input type="radio" name="inicio" value="inmediato"> Inmediato</label>
+        <label><input type="radio" name="inicio" value="30dias"> 30 días</label>
+        <label><input type="radio" name="inicio" value="60dias"> 60 días</label>
+      </fieldset>
+      <div class="campo-formulario">
+        <label><input type="checkbox" name="novedades" value="si"> Quiero recibir horarios disponibles</label>
+      </div>
+      <div class="campo-formulario ancho-completo">
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" rows="5" placeholder="Contanos tus objetivos, lesiones o disponibilidad..."></textarea>
+      </div>
+      <div class="botonera">
+        <button type="submit" class="boton"><i class="fa-regular fa-paper-plane"></i> Enviar</button>
+        <button type="reset" class="boton boton-secundario"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="pie-sitio">
+  <div class="contenedor">
+    <p>&copy; <span id="anio"></span> Zenith Fitness</p>
+    <div class="redes">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/principal.js"></script>
+</body>
+</html>
