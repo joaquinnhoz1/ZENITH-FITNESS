@@ -34,12 +34,12 @@
 }
 
 .tarjeta-caracteristica {
-  background: #16161b;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(135deg, #0a0a0a, #464949);
+  border: 1px solid rgb(241, 239, 239);
   border-radius: 16px;
   padding: 1.2rem;
   box-shadow: 0 10px 28px rgba(0,0,0,0.28);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.1s ease, box-shadow 3s ease;
 }
 
 .tarjeta-caracteristica:hover {
@@ -60,7 +60,7 @@
 }
 
 .btn-palpito {
-  animation: palpito 1.3s infinite;
+  animation: palpito 5s infinite;
   transform-origin: center;
 }
 
@@ -71,3 +71,4 @@
   75%  { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
