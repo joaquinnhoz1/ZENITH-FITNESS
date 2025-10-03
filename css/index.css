@@ -64,7 +64,7 @@
   transform-origin: center;
 }
 
-@keyframes palpito {
+@keyframes palpito { /*boton palpito */
   0%   { transform: scale(1); }
   25%  { transform: scale(1.08); }
   50%  { transform: scale(1); }
